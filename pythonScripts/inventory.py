@@ -6,10 +6,16 @@ def total_cost(prices):
 print(f"Total cost of fruits: {total_cost(fruits)}")
 
 def expensive_items(prices , threshold):
-    expensive = []
-    for item, price in prices.items():
-        if price > threshold:
-            expensive.append(item)
-    return expensive
+    return [item for item, price in prices.items() if price > threshold]
 
 print(f"Expensive items (cost > 5): {expensive_items(fruits, 5)}")
+
+
+
+nums = [3,8,1,9,4,7]
+
+def greaterThan(arr, threshold):
+    return [num for num in arr if num > threshold]
+
+print(f"Numbers greater than 5: {greaterThan(nums, 5)}")
+        
