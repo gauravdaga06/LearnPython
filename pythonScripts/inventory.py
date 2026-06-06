@@ -14,8 +14,17 @@ print(f"Expensive items (cost > 5): {expensive_items(fruits, 5)}")
 
 nums = [3,8,1,9,4,7]
 
-def greaterThan(arr, threshold):
+def greater_than(arr, threshold):
     return [num for num in arr if num > threshold]
 
-print(f"Numbers greater than 5: {greaterThan(nums, 5)}")
+print(f"Numbers greater than 5: {greater_than(nums, 5)}")
+
+price_in_cents = {fruit : int(price *100) for fruit, price in fruits.items()}
+print(f"Price in cents: {price_in_cents}")
+
+expensive = {fruit : price for fruit, price in fruits.items() if price > 5}
+print(f"Expensive fruits: {expensive}")
+
+length_of_fruits_name = {fruit: len(fruit) for fruit in fruits.keys()}
+print(f"Length of fruit names: {length_of_fruits_name}")
         
