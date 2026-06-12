@@ -8,12 +8,12 @@
 nums = [10, 20, 30, 40, 50, 60]
 
 print(nums[1:5])
-print(nums[:-3:-1])
+print(nums[4:6])
 print(nums[::-1])
 
 word = "enginner"
 print(f"reverse word = {word[::-1]}")
-print(f"first 4 letter = {word[:5]}")
+print(f"first 4 letter = {word[:4]}")
 
 my_list=  [1, 1, 2, 3, 3, 3]
 print(set(my_list))
