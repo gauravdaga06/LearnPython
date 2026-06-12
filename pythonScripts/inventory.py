@@ -19,12 +19,12 @@ def greater_than(arr, threshold):
 
 print(f"Numbers greater than 5: {greater_than(nums, 5)}")
 
-price_in_cents = {fruit : int(price *100) for fruit, price in fruits.items()}
+price_in_cents = {fruit : round(price *100) for fruit, price in fruits.items()}
 print(f"Price in cents: {price_in_cents}")
 
 expensive = {fruit : price for fruit, price in fruits.items() if price > 5}
 print(f"Expensive fruits: {expensive}")
 
-length_of_fruits_name = {fruit: len(fruit) for fruit in fruits.keys()}
+length_of_fruits_name = {fruit: len(fruit) for fruit in fruits}
 print(f"Length of fruit names: {length_of_fruits_name}")
         
