@@ -17,3 +17,11 @@ print(f"first 4 letter = {word[:5]}")
 
 my_list=  [1, 1, 2, 3, 3, 3]
 print(set(my_list))
+
+#output 
+#[20, 30, 40, 50]
+#[60, 50]
+#[60, 50, 40, 30, 20, 10]
+#reverse word = rennigne
+#first 4 letter = engin
+#{1, 2, 3}
